@@ -1,0 +1,55 @@
+#container {
+    display: grid;
+    grid-template-columns: [colum1] 200px [colum2] auto [colum3] 200px;
+    grid-template-rows: [row1] 150px [row2] 200px [row3] auto [row4] 200px;
+    background-image: url(/ex_CSS/img/background.jpeg);
+    /*background-color: gray;*/
+}
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: white;
+}
+#TitleBanner {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: white;
+}
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: white;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+#navMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#navMenu a {
+    background-color: burlywood;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+}
