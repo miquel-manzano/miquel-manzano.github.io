@@ -1,9 +1,9 @@
 #container {
+    font-family: Tahoma, Verdana, sans-serif;
     display: grid;
     grid-template-columns: [colum1] 200px [colum2] auto [colum3] 200px;
     grid-template-rows: [row1] 150px [row2] 200px [row3] auto [row4] 200px;
-    background-image: url(/ex_CSS/img/background.jpeg);
-    /*background-color: gray;*/
+    background-attachment: fixed;
 }
 header {
     grid-column-start: 1;
@@ -18,6 +18,7 @@ header {
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
     text-align: center;
     color: white;
 }
@@ -27,6 +28,7 @@ main {
     grid-row-start: 3;
     grid-row-end: 4;
     background-color: white;
+    padding: 50px;
 }
 footer {
     grid-column-start: 1;
@@ -34,6 +36,13 @@ footer {
     grid-row-start: 4;
     grid-row-end: 5;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 header {
     display: flex;
@@ -48,8 +57,30 @@ header {
     flex-direction: row;
     gap: 40px;
 }
-#navMenu a {
-    background-color: burlywood;
+
+.button {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
     padding: 10px 15px 10px 15px;
-    border-radius: 50px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
 }
+.button:hover {
+    background-color: black;
+    color: white;
+  }
+  .right {
+    text-align: right;
+  }
+  .left {
+    text-align: left;
+  }
+  .center {
+    text-align: center;
+  }
+  .center img {
+    width: 300px;
+    height: auto;
+  }
