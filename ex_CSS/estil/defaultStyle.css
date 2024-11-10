@@ -1,7 +1,7 @@
 #container {
     font-family: Tahoma, Verdana, sans-serif;
     display: grid;
-    grid-template-columns: [colum1] 200px [colum2] auto [colum3] 200px;
+    grid-template-columns: [colum1] 250px [colum2] auto [colum3] 250px;
     grid-template-rows: [row1] 150px [row2] 200px [row3] auto [row4] 200px;
     background-attachment: fixed;
 }
@@ -84,3 +84,13 @@ header {
     width: 300px;
     height: auto;
   }
+  @media (max-width: 1400px) {
+    #TitleBanner {
+      grid-column-start: 1;
+      grid-column-end: 4;
+  }
+  main {
+    grid-column-start: 1;
+    grid-column-end: 4;;
+  }
+}
