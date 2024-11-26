@@ -25,25 +25,29 @@
             </div>
             <main>
                 <section>
-                    <form action="" method="get">
-                        <div>
-                          <label for="name">El teu nom: </label>
-                          <input type="text" id="name" name="user_name">
+                    <form id="MyForm" method="get" name="MiawMiaw" action="result.html" target="_blank">
+                        <div class="formElement">
+                            <label id="NameTitle" for="name">Nombre</label>
+                            <br>
+                            <input type="text" id="name" name="user_name">
                         </div>
-                        <div>
-                          <label for="mail">El teu correu electrònic: </label>
-                          <input type="email" id="mail" name="user_mail">
+                        <div class="formElement">
+                            <label id="MailTitle" for="mail">Correu electrònic</label>
+                            <br>
+                            <input type="email" id="mail" name="user_mail">
                         </div>
-                        <div>
-                            <label for="msg">Títol: </label>
+                        <div class="formElement">
+                            <label id="TitleTitle" for="msg">Títol</label>
+                            <br>
                             <input type="text" id="title" name="msg_title">
                           </div>
-                        <div>
-                          <label for="msg">Missatge: </label>
-                          <textarea id="msg" name="user_message"></textarea>
+                        <div class="formElement">
+                            <label id="messageTitle" for="msg">Missatge</label>
+                            <br>
+                            <textarea id="msg" name="user_message"></textarea>
                         </div>
-                        <div>
-                          <button type="submit">Enviar Missatge</button>
+                        <div class="formElement">
+                            <button class="button" type="submit">Enviar</button>
                         </div>
                       </form>
                 </section>
@@ -67,5 +71,6 @@
                 </section>
             </footer>
         </div>
+        <script src="../JavaScript/formValidator.js" type="module"></script>
     </body>
 </html>
