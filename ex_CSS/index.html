@@ -10,16 +10,18 @@
 
     <body>
         <div id="container">
-            <header>
-                <h1>EPEPC</h1>
-                <nav> <!--Menu de navegacion-->
-                    <div id="navMenu">
-                        <a class="button" href="/ex_CSS/index.html"> Inici </a>
-                        <a class="button" href="/ex_CSS/pagines/list.html"> Llistat </a>
-                        <a class="button" href="/ex_CSS/pagines/contact.html"> Contacta </a>
-                    </div>
-                </nav>
-            </header>
+            <div class="topbar" id="topbar">
+                <header>
+                    <h1>EPEPC</h1>
+                    <nav> <!--Menu de navegacion-->
+                        <div id="navMenu">
+                            <a class="button" href="/ex_CSS/index.html"> Inici </a>
+                            <a class="button" href="/ex_CSS/pagines/list.html"> Llistat </a>
+                            <a class="button" href="/ex_CSS/pagines/contact.html"> Contacta </a>
+                        </div>
+                    </nav>
+                </header>
+            </div>
             <div id="TitleBanner">
                 <h2>Espècies en perill d'extincio als Paisos Catalans</h2>
             </div>
@@ -35,7 +37,7 @@
                         <article>
                             <h3><a href="/ex_CSS/pagines/caretta_caretta.html">Tortuga Babaua - Caretta caretta</a></h3>
                             <br>
-                            <div><img src="/ex_CSS/img/Loggerhead_turtle.jpg" alt="tortugaImg" class="ImgArticle"></div>
+                            <div class="fade-in" ><img src="/ex_CSS/img/Loggerhead_turtle.jpg" alt="tortugaImg" class="ImgArticle"></div>
                             <dl>
                                 <a href="/ex_CSS/pagines/caretta_caretta.html">
                                     <dt>Estat de conservació</dt>
@@ -48,7 +50,7 @@
                         <article>
                             <h3><a href="/ex_CSS/pagines/caretta_caretta.html">Lludria - Lutra lutra</a></h3>
                             <br>
-                            <div><img src="/ex_CSS/img/lutra_lutra.jpg" alt="tortugaImg" class="ImgArticle"></div>
+                            <div class="fade-in" ><img src="/ex_CSS/img/lutra_lutra.jpg" alt="tortugaImg" class="ImgArticle"></div>
                             <dl>
                                 <a href="/ex_CSS/pagines/caretta_caretta.html">
                                     <dt>Gairebe amenaçada</dt>
@@ -61,7 +63,7 @@
                         <article>
                             <h3><a href="/ex_CSS/pagines/caretta_caretta.html"> Ratpenat de ferradura mitjà - Rhinolophus mehelyi </a></h3>
                             <br>
-                            <div><img src="/ex_CSS/img/rhinolophus_mehelyi.jpg" alt="tortugaImg" class="ImgArticle"></div>
+                            <div class="fade-in" ><img src="/ex_CSS/img/rhinolophus_mehelyi.jpg" alt="tortugaImg" class="ImgArticle"></div>
                             <dl>
                                 <a href="/ex_CSS/pagines/caretta_caretta.html">
                                     <dt>Estat de conservació</dt>
@@ -100,5 +102,7 @@
                 </section>
             </footer>
         </div>
+        <script src="./JavaScript/TopBar.js" type="module"></script>
+        <script src="./JavaScript/effect.js" type="module"></script>
     </body>
 </html>

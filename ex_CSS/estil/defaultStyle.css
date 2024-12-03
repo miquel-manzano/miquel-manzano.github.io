@@ -58,7 +58,7 @@ header {
     gap: 40px;
 }
 
-.button {
+/*.button {
     color: black;
     font-style: normal;
     text-decoration: none;
@@ -83,7 +83,7 @@ header {
   .center img {
     width: 300px;
     height: auto;
-  }
+  }*/
   @media (max-width: 1400px) {
     #TitleBanner {
       grid-column-start: 1;
@@ -93,4 +93,52 @@ header {
     grid-column-start: 1;
     grid-column-end: 4;;
   }
+}
+
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.topbar.scrolled {
+  background-color: #111;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Animación fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos del botón */
+.button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #218838;
 }
