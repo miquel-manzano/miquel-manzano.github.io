@@ -1,0 +1,28 @@
+#container {
+    background-image: url(../img/FireCat.jpg);
+}
+
+.formElement {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.formElement input {
+    margin-top: 20px;
+}
+
+.formElement textarea {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 40%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}

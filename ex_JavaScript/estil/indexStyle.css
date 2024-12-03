@@ -1,0 +1,9 @@
+#container {
+    background-image: url(/ex_CSS/img/background.jpeg);
+}
+#ArticlesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
